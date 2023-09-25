@@ -1,0 +1,136 @@
+Field Name	Description	Data Type	Length	Codes	Short Description				
+USERNAME 	Study abbreviation plus researcher provided ID 	Character 	30	Assigned per project 	Study abbreviation plus researcher provided ID 				
+USERID 	Unique system ID 	Character 	38	System assigned GUID such as {40C29DAB-4C7B-423F-956C-8A86B5E77B39} 	Unique system ID 				
+RECALLNO	Recall number. 	Numeric 	2	1 -- 99 	Recall number. 				
+RECALLATTEMPT 	Sequence number for attempt within recall 	Numeric 	2	1 -- 99 	Sequence number for attempt within recall 				
+RECALLSTATUS	The final status of this recall	Numeric 	1	"2 = Complete
+5 = Breakoff/Quit"	The final status of this recall				
+INTAKESTARTDATETIME	Date and time of the start of the 24 hour period for which intake is being reported	Date 	22	MM/DD/YYYY hh:mm 	Date and time of the start of the 24 hour period for which intake is being reported				
+INTAKEENDDATETIME	Date and time of the end of the 24 hour period for which intake is being reported	Date 	22	MM/DD/YYYY hh:mm	Date and time of the end of the 24 hour period for which intake is being reported				
+REPORTINGDATE 	The date that the last data were reported within the reporting period. Reporting period is the time within which respondents are allowed to report their intake.	Date 	8	MM/DD/YYYY	The date that the last data were reported within the reporting period. Reporting period is the time within which respondents are allowed to report their intake.				
+LANG 	Language used for recall. 	Numeric 	1	1=English;  2=Spanish	Language used for recall. 				
+OCC_NO 	"System assigned sequence number for this eating occasion; eating occasions (meals) are sorted chronologically based on the times reported by respondent. By default, supplements are assigned the final sequence number in the intake."	Numeric 	2	1 -- 99 	"System assigned sequence number for this eating occasion; eating occasions (meals) are sorted chronologically based on the times reported by respondent. By default, supplements are assigned the final sequence number in the intake."				
+OCC_TIME 	Time of eating occasion; supplements are assigned a default time of midnight on the intake day.	Date 	19	MM/DD/YYYY hh:mm	Time of eating occasion; supplements are assigned a default time of midnight on the intake day.				
+OCC_NAME 	Name of eating occasion. 	Numeric 	1	1=Breakfast; 2=Brunch; 3=Lunch; 4=Dinner; 5=Supper; 6=Snack; 7=Just a Drink; 8=Just a Supplement	Name of eating occasion. 				
+EATWITH 	Who was with the respondent for the meal	Numeric 	1	1 = Eat Alone; 2 = Family Member(s); 3 = Other(s); 4 = Family Member(s) and Other(s); 9 = Don't know; Blank = Not applicable 	Who was with the respondent for the meal				
+WATCHTVUSECOMPUTER 	Respondent's TV and computer use during the meal	Numeric 	1	"1=Watching TV (no change) 
+2=Using a computer  
+3=Using a mobile phone or tablet     
+4=None of these
+Blank = Not Applicable (no change)
+"	Respondent's TV and computer use during the meal				
+LOCATION 	Respondent's location while eating the meal	Numeric 	2	"1=Home;  2=Fast food restaurant; 3=Other restaurant; 4=Cafeteria; 5=Bar or tavern; 6=Work (not in cafeteria); 7=Car; 8=Sports or entertainment venue; 9=Some place else; 10 (Kids version only)=School, cafeteria; 11 (Kids version only)=School, not in cafeteria; 98=Don’t know; Blank=Not applicable "	Respondent's location while eating the meal				
+FOODNUM 	FoodListTerm (FLT) or Supplement Sequence number within the recall 	Numeric 	3	1 -- 999 	FoodListTerm (FLT) or Supplement Sequence number within the recall 				
+FOODTYPE 	Type of food reported 	Numeric 	1	1=Primary; 2=Addition; Blank=Not Applicable 	Type of food reported 				
+FOODSRCE	Source of the food/most of the ingredients for the food	Character 	250	Study specified Food Source answer	Source of the food/most of the ingredients for the food				
+CODENUM 	Food code sequence number within a meal 	Numeric 	2	1 -- 99=Food code number 	Food code sequence number within a meal 				
+FOODCODE 	USDA Food and Nutrient Database for Dietary Studies (FNDDS) Food code	Numeric 	8	11000000- 99999999=Food code 	USDA Food and Nutrient Database for Dietary Studies (FNDDS) Food code				
+MODCODE 	Recipe Modification Code from FNDDS 	Numeric 	6	0=No modification; 100000 - 999999=Modification code 	Recipe Modification Code from FNDDS 				
+HOWMANY 	Amount of the food model represented in the field PORTIONCODE	Numeric 	8.3	0.001 -- 9999.999 	Amount of the food model represented in the field PORTIONCODE				
+SUBCODE 	Portion subcode from FNDDS 	Numeric 	7	0=Not applicable; 1-9999999=Code 	Portion subcode from FNDDS 				
+PORTIONCODE 	Food measure code from FNDDS	Numeric 	5	"0=Not applicable; MEASURE was GM, LB, or WO; 1-99999=Code; 98=1 gram"	Food measure code from FNDDS				
+FOODAMT 	"Amount of food in grams; calculated using HOWMANY, SUBCODE, and PORTIONCODE data"	Numeric 	8.2	0.01 -- 99999.99=Amount in grams; Blank=Not applicable 	"Amount of food in grams; calculated using HOWMANY, SUBCODE, and PORTIONCODE data"				
+KCAL 	Energy (kcal) 	Numeric 	12.6	  	Energy (kcal) 				
+PROT 	Protein (g) 	Numeric 	12.6	  	Protein (g) 				
+TFAT 	Total Fat (g) 	Numeric 	12.6	  	Total Fat (g) 				
+CARB 	Carbohydrate (g) 	Numeric 	12.6	  	Carbohydrate (g) 				
+MOIS 	Water (g) 	Numeric 	12.6	  	Water (g) 				
+ALC 	Alcohol (g) 	Numeric 	12.6	  	Alcohol (g) 				
+CAFF 	Caffeine (mg) 	Numeric 	12.6	  	Caffeine (mg) 				
+THEO 	Theobromine (mg) 	Numeric 	12.6	  	Theobromine (mg) 				
+SUGR 	"Sugars, total (g) "	Numeric 	12.6	  	"Sugars, total (g) "				
+FIBE 	"Fiber, total dietary (g) "	Numeric 	12.6	  	"Fiber, total dietary (g) "				
+CALC 	Calcium (mg) 	Numeric 	12.6	  	Calcium (mg) 				
+IRON 	Iron (mg) 	Numeric 	12.6	  	Iron (mg) 				
+MAGN 	Magnesium (mg) 	Numeric 	12.6	  	Magnesium (mg) 				
+PHOS 	Phosphorus (mg) 	Numeric 	12.6	  	Phosphorus (mg) 				
+POTA 	Potassium (mg) 	Numeric 	12.6	  	Potassium (mg) 				
+SODI 	Sodium (mg) 	Numeric 	12.6	  	Sodium (mg) 				
+ZINC 	Zinc (mg) 	Numeric 	12.6	  	Zinc (mg) 				
+COPP 	Copper (mg) 	Numeric 	12.6	  	Copper (mg) 				
+SELE 	Selenium (mcg) 	Numeric 	12.6	  	Selenium (mcg) 				
+VC 	Vitamin C (mg) 	Numeric 	12.6	  	Vitamin C (mg) 				
+VB1 	Thiamin (mg) 	Numeric 	12.6	  	Thiamin (mg) 				
+VB2 	Riboflavin (mg) 	Numeric 	12.6	  	Riboflavin (mg) 				
+NIAC 	Niacin (mg) 	Numeric 	12.6	  	Niacin (mg) 				
+VB6 	Vitamin B-6 (mg) 	Numeric 	12.6	  	Vitamin B-6 (mg) 				
+FOLA 	"Folate, total (mcg) "	Numeric 	12.6	  	"Folate, total (mcg) "				
+FA 	Folic acid (mcg) 	Numeric 	12.6	  	Folic acid (mcg) 				
+FF 	"Folate, food (mcg) "	Numeric 	12.6	  	"Folate, food (mcg) "				
+FDFE 	"Folate, DFE (mcg_DFE) "	Numeric 	12.6	  	"Folate, DFE (mcg_DFE) "				
+VB12 	Vitamin B-12 (mcg) 	Numeric 	12.6	  	Vitamin B-12 (mcg) 				
+VARA 	"Vitamin A, RAE (mcg_RAE) "	Numeric 	12.6	  	"Vitamin A, RAE (mcg_RAE) "				
+RET 	Retinol (mcg) 	Numeric 	12.6	  	Retinol (mcg) 				
+BCAR 	"Carotene, beta (mcg) "	Numeric 	12.6	  	"Carotene, beta (mcg) "				
+ACAR 	"Carotene, alpha (mcg) "	Numeric 	12.6	  	"Carotene, alpha (mcg) "				
+CRYP 	"Cryptoxanthin, beta (mcg) "	Numeric 	12.6	  	"Cryptoxanthin, beta (mcg) "				
+LYCO 	Lycopene (mcg) 	Numeric 	12.6	  	Lycopene (mcg) 				
+LZ 	Lutein + zeaxanthin (mcg) 	Numeric 	12.6	  	Lutein + zeaxanthin (mcg) 				
+ATOC 	"Vitamin E, alpha-tocopherol (mg) "	Numeric 	12.6	  	"Vitamin E, alpha-tocopherol (mg) "				
+VK 	"Vitamin K, phylloquinone (mcg) "	Numeric 	12.6	  	"Vitamin K, phylloquinone (mcg) "				
+CHOLE 	Cholesterol (mg) 	Numeric 	12.6	  	Cholesterol (mg) 				
+SFAT 	"Fatty acids, total saturated (g) "	Numeric 	12.6	  	"Fatty acids, total saturated (g) "				
+S040 	"4:0, Butanoic acid (g)"	Numeric 	12.6	  	"4:0, Butanoic acid (g)"				
+S060 	"6:0, Hexanoic acid (g)"	Numeric 	12.6	  	"6:0, Hexanoic acid (g)"				
+S080 	"8:0, Octanoic acid (g)"	Numeric 	12.6	  	"8:0, Octanoic acid (g)"				
+S100 	"10:0, Decanoic acid (g)"	Numeric 	12.6	  	"10:0, Decanoic acid (g)"				
+S120 	"12:0, Dodecanoic acid (g)"	Numeric 	12.6	  	"12:0, Dodecanoic acid (g)"				
+S140 	"14:0, Tetradecanoic acid (g)"	Numeric 	12.6	  	"14:0, Tetradecanoic acid (g)"				
+S160 	"16:0, Hexadecanoic acid (g)"	Numeric 	12.6	  	"16:0, Hexadecanoic acid (g)"				
+S180 	"18:0, Octadecanoic acid (g)"	Numeric 	12.6	  	"18:0, Octadecanoic acid (g)"				
+MFAT 	"Fatty acids, total monounsaturated (g) "	Numeric 	12.6	  	"Fatty acids, total monounsaturated (g) "				
+M161 	"16:1, Hexadecenoic acid, undifferentiated(g)"	Numeric 	12.6	  	"16:1, Hexadecenoic acid, undifferentiated(g)"				
+M181 	"18:1, Octadecenoic acid, undifferentiated (g)"	Numeric 	12.6	  	"18:1, Octadecenoic acid, undifferentiated (g)"				
+M201 	"20:1, Eicosenoic acid, undifferentiated (g)"	Numeric 	12.6	  	"20:1, Eicosenoic acid, undifferentiated (g)"				
+M221 	"22:1, Docosenoic acid, undifferentiated (g)"	Numeric 	12.6	  	"22:1, Docosenoic acid, undifferentiated (g)"				
+PFAT 	"Fatty acids, total polyunsaturated (g) "	Numeric 	12.6	  	"Fatty acids, total polyunsaturated (g) "				
+P182 	"18:2, Octadecadienoic acid (g)"	Numeric 	12.6	  	"18:2, Octadecadienoic acid (g)"				
+P183 	"18:3, Octadecatrienoic acid (g)"	Numeric 	12.6	  	"18:3, Octadecatrienoic acid (g)"				
+P184 	"18:4, Octadecatetraenoic acid (g)"	Numeric 	12.6	  	"18:4, Octadecatetraenoic acid (g)"				
+P204 	"20:4, Eicosatetraenoic acid (g)"	Numeric 	12.6	  	"20:4, Eicosatetraenoic acid (g)"				
+P205 	"20:5 n-3, Eicosapentaenoic acid [EPA] (g)"	Numeric 	12.6	  	"20:5 n-3, Eicosapentaenoic acid [EPA] (g)"				
+P225 	"22:5 n-3, Docosapentaenoic acid [DPA] (g)"	Numeric 	12.6	  	"22:5 n-3, Docosapentaenoic acid [DPA] (g)"				
+P226 	"22:6 n-3, Docosahexaenoic acid [DHA] (g)"	Numeric 	12.6	  	"22:6 n-3, Docosahexaenoic acid [DHA] (g)"				
+VITD 	Vitamin D (D2 + D3) (mcg)	Numeric 	12.6	  	Vitamin D (D2 + D3) (mcg)				
+CHOLN 	"Choline, total (mg)"	Numeric 	12.6	  	"Choline, total (mg)"				
+VITE_ADD 	Added Vitamin E (mg)	Numeric 	12.6	  	Added Vitamin E (mg)				
+B12_ADD 	Added Vitamin B-12 (mcg)	Numeric 	12.6	  	Added Vitamin B-12 (mcg)				
+F_TOTAL	Total intact fruits (whole or cut) and fruit juices (cup eq.)	Numeric 	12.6		Total intact fruits (whole or cut) and fruit juices (cup eq.)				  
+F_CITMLB	"Intact fruits (whole or cut) of citrus, melons, and berries (cup eq.)"	Numeric 	12.6		"Citrus, melons, and berries (cup eq.)"				  
+F_OTHER	"Intact fruits (whole or cut); excluding citrus, melons, and berries (cup eq.)"	Numeric 	12.6		"Fruits excluding citrus, melons, and berries (cup eq.)"				  
+F_JUICE	"Fruit juices, citrus and non citrus (cup eq.)"	Numeric 	12.6		"Fruit juices, citrus and non citrus (cup eq.)"				  
+V_TOTAL	"Total dark green, red and orange, starchy, and other vegetables; excludes legumes (cup eq.)"	Numeric 	12.6		Total vegetables; excludes legumes (cup eq.)				  
+V_DRKGR	D ark green vegetables (cup eq.)	Numeric 	12.6		Dark green vegetables (cup eq.)				  
+V_REDOR_TOTAL	Total red and orange vegetables (tomatoes and tomato products + other red and orange vegetables)(cup eq.)	Numeric 	12.6		Total red and orange vegetables (cup eq.)				  
+V_REDOR_TOMATO	Tomatoes and tomato products (cup eq.)	Numeric 	12.6		Tomatoes and tomato products (cup eq.)				  
+V_REDOR_OTHER	"Other red and orange vegetables, excluding tomatoes and tomato products (cup eq.)"	Numeric 	12.6		"Other red and orange vegetables, excluding tomatoes and tomato products (cup eq.)"				  
+V_STARCHY_TOTAL	Total starchy vegetables (white potatoes + other starchy vegetables) (cup eq.)	Numeric 	12.6		Total starchy vegetables (cup eq.)				  
+V_STARCHY_POTATO	White potatoes (cup eq.)	Numeric 	12.6		White potatoes (cup eq.)				  
+V_STARCHY_OTHER	"Other starchy vegetables, excluding white potatoes (cup eq.)"	Numeric 	12.6		"Other starchy vegetables, excluding white potatoes (cup eq.)"				  
+V_OTHER	Other vegetables not in the vegetable components listed above (cup eq.)	Numeric 	12.6		Other vegetables not listed (cup eq.)				  
+V_LEGUMES	Beans and peas (legumes) computed as vegetables (cup eq.)	Numeric 	12.6		Beans and peas (legumes) (cup eq.)				  
+G_TOTAL	Total whole and refined grains (oz. eq.)	Numeric 	12.6		Total whole and refined grains (oz. eq.)				  
+G_WHOLE	"Grains defined as whole grains and contain the entire grain kernel ? the bran, germ, and endosperm (oz. eq.)"	Numeric 	12.6		Whole grains (oz. eq.)				  
+G_REFINED	Refined grains that do not contain all of the components of the entire grain kernel (oz. eq.)	Numeric 	12.6		Refined grains (oz. eq.)				  
+PF_TOTAL	"Total meat, poultry, organ meat, cured meat, seafood, eggs, soy, and nuts and seeds; excludes legumes (oz. eq.)"	Numeric 	12.6		"Total meat, eggs, soy, and nuts; excludes legumes (oz. eq.)"				  
+PF_MPS_TOTAL	"Total of meat, poultry, seafood, organ meat, and cured meat (oz. eq.)"	Numeric 	12.6		Total of meat and cured meat (oz. eq.)				  
+PF_MEAT	"Beef, veal, pork, lamb, and game meat; excludes organ meat and cured meat (oz. eq.)"	Numeric 	12.6		"Beef, veal, pork, lamb, and game meat; excludes organ meat and cured meat (oz. eq.)"				  
+PF_CUREDMEAT	"Frankfurters, sausages, corned beef, and luncheon meat that are made from beef, pork, or poultry (oz. eq.)"	Numeric 	12.6		Cured meat (oz. eq.)				  
+PF_ORGAN	"Organ meat from beef, veal, pork, lamb, game, and poultry (oz. eq.)"	Numeric 	12.6		Organ meat (oz. eq.)				  
+PF_POULT	"Chicken, turkey, Cornish hens, duck, goose, quail, and pheasant (game birds); excludes organ meat and cured meat (oz. eq.)"	Numeric 	12.6		Poultry meat; excludes organ meat and cured meat (oz. eq.)				  
+PF_SEAFD_HI	"Seafood (finfish, shellfish, and other seafood) high in n-3 fatty acids (oz. eq.)"	Numeric 	12.6		Seafood high in n-3 fatty acids (oz. eq.)				  
+PF_SEAFD_LOW	"Seafood (finfish, shellfish, and other seafood) low in n-3 fatty acids (oz. eq.)"	Numeric 	12.6		Seafood low in n-3 fatty acids (oz. eq.)				  
+PF_EGGS	"Eggs (chicken, duck, goose, quail) and egg substitutes (oz. eq.)"	Numeric 	12.6		Eggs and egg substitutes (oz. eq.)				  
+PF_SOY	"Soy products, excluding calcium fortified soy milk and immature soybeans (oz. eq.)"	Numeric 	12.6		Soy products (oz. eq.)				  
+PF_NUTSDS	"Peanuts, tree nuts, and seeds; excludes coconut (oz. eq.)"	Numeric 	12.6		"Peanuts, tree nuts, and seeds; excludes coconut (oz. eq.)"				  
+PF_LEGUMES	Beans and Peas (legumes) computed as protein foods (oz. eq.)	Numeric 	12.6		Beans and Peas (legumes) computed as protein foods (oz. eq.)				  
+D_TOTAL	"Total milk, yogurt, cheese, whey. For some foods, the total dairy values could be higher than sum of D_MILK, D_YOGURT, and D_CHEESE because Misc dairy component composed of whey which is not included in FPED as separate variable. (cup eq.)"	Numeric 	12.6		"Total milk, yogurt, cheese, whey (cup eq.)"				  
+D_MILK	"Fluid milk, buttermilk, evaporated milk, dry milk, and calcium fortified soy milk (cup eq.)"	Numeric 	12.6		Milk and milk products (cup eq.)				  
+D_YOGURT	Yogurt (cup eq.)	Numeric 	12.6		Yogurt (cup eq.)				  
+D_CHEESE	Cheeses (cup eq.)	Numeric 	12.6		Cheeses (cup eq.)				  
+OILS	"Fats naturally present in nuts, seeds, seafood; unhydrogenated vegetable oils, except palm oil, palm kernel oil,  coconut oils; fat in avocado and olives above allowable amount; 50% of fat present in stick/tub margarines, margarine spreads (grams)"	Numeric 	12.6		Oils (grams)				
+SOLID_FATS	"Fats naturally present in meat, poultry, eggs, dairy (lard, tallow, butter); hydrogenated/partially hydrogenated oils; shortening, palm, palm kernel, coconut oils; coconut meat, cocoa butter; 50% of fat in stick/tub margarines, margarine spreads (grams)"	Numeric 	12.6		Solid fats (grams)				
+ADD_SUGARS	Foods defined as added sugars (tsp. eq.)	Numeric 	12.6		Added sugars (tsp. eq.)				
+A_DRINKS	Alcoholic beverages and alcohol (ethanol) added to foods after cooking (no. of drinks)	Numeric 	12.6		Alcoholic beverages and alcohol (no. of drinks)				
+FOODCOMP 	"This is an indicator which shows, per food, if the portion and/or nutrient data is complete or missing "	Numeric 	1	1=Data Complete; 2=Data Missing 	"This is an indicator which shows, per food, if the portion and/or nutrient data is complete or missing "				
+FOOD_DESCRIPTION 	"Description of Food, from either the FNDDS FoodCode Description or, where applicable, the ModCode description "	Character 	255	Text 	"Description of Food, from either the FNDDS FoodCode Description or, where applicable, the ModCode description "				
